@@ -1,6 +1,6 @@
 import axios from "axios";
 import {Form, Col,Button }from 'react-bootstrap'
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import "./login.css";
@@ -13,7 +13,8 @@ const Login = () => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}auth/login`, {
+      // const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}auth/login`, {
+      const res = await axios.post(`/api/auth/login`, {
         email:e.target.email.value,
         password:e.target.password.value
       });

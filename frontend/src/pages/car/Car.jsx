@@ -17,7 +17,6 @@ const Car = () => {
         }
 
     )
-    const [showText, setShowText] = useState(false);
     const onImageChange = (event) => {
         setImage([])
         if (event.target.files) {
@@ -81,7 +80,8 @@ const Car = () => {
                     return url;
                 })
             );
-            let sendData = await axios.post(`${process.env.REACT_APP_BACKEND_URL}car/new`,
+            // let sendData = await axios.post(`${process.env.REACT_APP_BACKEND_URL}car/new`,
+            let sendData = await axios.post(`/api/car/new`,
                 {
                     ...upObj,
                     photos: list,
@@ -121,13 +121,6 @@ const Car = () => {
         delete myObj[index];
         setImageSend(myObj)
     }
-    function handleMouseOver() {
-        setShowText(true);
-      }
-    
-      function handleMouseLeave() {
-        setShowText(false);
-      }
     return (<>
         {show ?
             <Alert variant={alertValue.varient} onClose={() => setShow(false)} dismissible>
