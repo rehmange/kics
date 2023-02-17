@@ -1,0 +1,48 @@
+.CarWrapper{
+    margin: 35px;
+}
+.imgSize{
+    width: 84px;
+    height: 75px;
+}
+.imgSize:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.icons{
+    cursor: pointer;
+}
+.imageWrapper{
+    border: 1px solid #bdb6b6;
+    position:relative;
+}
+.deleteicon{
+    position: absolute;
+    top: 25px;
+    color: white;
+    left: 24px;
+    font-size: 13px;
+    display: flex;
+    gap: 11px;
+}
+.imgInpWrapper{
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:4px
+}
+.filetype{
+    visibility: hidden;
+}
+.imgLabel{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #bdb6b6;
+    vertical-align: middle;
+    height: 75px;
+    cursor: pointer;
+    background: #e8e8e8;
+    font-size: 11px;
+    padding: 7px;
+}

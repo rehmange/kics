@@ -1,0 +1,49 @@
+.loginWrapper {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 29px;
+}
+.viewpass{
+  float: right;
+  margin-left: -25px;
+  margin-top: -26px;
+  position: relative;
+  font-size: small;
+  z-index: 2;
+  margin-right: 5px;
+}
+/* .lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lInput{
+  height: 30px;
+  padding: 10px;
+}
+
+.lButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.lButton:disabled{
+  background-color: #0071c28c;
+  cursor: not-allowed;
+} */
