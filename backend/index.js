@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import authRoute from './routes/auth.js'
 import carRoute from './routes/car.js'
+import serverless from "serverless-http"
 const app = express();
 dotenv.config();
 const port = process.env.PORT || 8800
@@ -44,3 +45,5 @@ app.listen(port, () => {
   connect();
   console.log("Connected to backend.");
 });
+// app.use('/.netlify/functions/api',authRoute,carRoute)
+// module.exports.handler = serverless(app);

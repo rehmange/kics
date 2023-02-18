@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const Image = ({item,index,deleteHandle }) => {
-    const [show, setShow] = useState(true);
     const [showText, setShowText] = useState(false);
     function handleMouseOver() {
         setShowText(true);

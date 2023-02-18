@@ -80,8 +80,8 @@ const Car = () => {
                     return url;
                 })
             );
-            // let sendData = await axios.post(`${process.env.REACT_APP_BACKEND_URL}car/new`,
-            let sendData = await axios.post(`/api/car/new`,
+            let sendData = await axios.post(`${process.env.REACT_APP_BACKEND_URL}car/new`,
+            // let sendData = await axios.post(`/api/car/new`,
                 {
                     ...upObj,
                     photos: list,

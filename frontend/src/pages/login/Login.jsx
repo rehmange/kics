@@ -13,8 +13,8 @@ const Login = () => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      // const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}auth/login`, {
-      const res = await axios.post(`/api/auth/login`, {
+      const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}auth/login`, {
+      // const res = await axios.post(`/api/auth/login`, {
         email:e.target.email.value,
         password:e.target.password.value
       });
